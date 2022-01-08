@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Kontakt - Lokacija Parka prirode Velebit, Za više informacija kontaktirajte nas na našu konstakt formu">
+    <meta name="keywords" content="kontakt, lokacija, forma, kontakt forma">
+    <meta name="author" content="Dino Ćelić">
+    <title>Kontakt - Park prirode Velebit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="hero"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Početna</a>
+                </li>
+                <li>
+                    <a href="novosti.html">Novosti</a>
+                </li>
+                <li>
+                    <a class="active" href="kontakt.html">Kontakt</a>
+                </li>
+                <li>
+                    <a href="o-nama.html">O nama</a>
+                </li>
+                <li>
+                    <a href="galerija.html">Galerija</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Kontakt</h1> 
+        <h2>Lokacija</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d727956.2371495828!2d14.792629265625001!3d44.54425099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4761806aa7ba8d11%3A0x1e2ce1c6d87d1547!2sJavna%20ustanova%20%22Park%20prirode%20Velebit%22!5e0!3m2!1shr!2shr!4v1640861262972!5m2!1shr!2shr" style="width:100%;border:0;" height="450" allowfullscreen="" loading="lazy"></iframe>
+        <h2>Kontakt forma</h2>
+        <form action="" name="kontakt_forma" method="POST">
+            <label for="ime">Ime *</label>
+            <input type="text" id="ime" name="ime" placeholder="Vaše ime..." required>
+
+            <label for="prezime">Prezime *</label>
+		    <input type="text" id="prezime" name="prezime" placeholder="Vaše prezime..." required>
+
+            <label for="email">E-mail *</label>
+			<input type="email" id="email" name="email" placeholder="Vaše e-mail..." required>
+
+            <label for="drzava">Država</label>
+            <select id="drzava" name="drzava">
+                <option value="">Molimo odaberite državu</option>
+                <option value="HR" selected>Hrvatska</option>
+                <option value="BE">Belgija</option>
+                <option value="DE">Njemačka</option>
+                <option value="HU">Mađarska</option>
+                <option value="FR">Francuska</option>
+                <option value="PL">Poljska</option>
+            </select>
+
+            <label for="poruka">Poruka</label>
+			<textarea id="poruka" name="poruka" placeholder="Tvoja poruka..." style="height:200px"></textarea>
+
+			<input type="submit" value="Pošalji">
+        </form>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2021. Dino Ćelić. <a href="https://github.com/dino1816/Web-Aplikacije---Projekt.git">Github</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,193 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font-size: 16px;
+}
+.hero{
+    background-image: url(./img/park_prirode_velebit_banner.JPG);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+nav{
+    background: linear-gradient(to left,#63b32e, #016801);
+    font-size: 15px;
+}
+nav ul{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    overflow: hidden;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    display: block;
+    text-transform: uppercase;
+    padding: 16px;
+    text-decoration: none;
+    color: rgb(247, 247, 247);
+    font-weight: 600;
+}
+nav ul li a.active{
+    color: rgb(29, 29, 29);
+}
+nav ul li a:hover{
+    background-color:rgba(0, 0, 0, 0.25);
+}
+main{
+    padding: 0 16px; 
+    overflow: hidden;
+}
+h1{
+    font-size: 42px;
+    font-weight: 900;
+}
+h2{
+    font-size: 36px;
+    margin-bottom: 4px;
+}
+main p{
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 4px;
+    line-height: 26px;
+}
+main p.f-l{
+    width: 69%;
+    float: left;
+}
+main figure{
+    float: right;
+    width: 30%;
+    margin: 0;
+    text-align: justify;
+}
+main figure img{
+    width: 100%;
+}
+.clear{
+    clear:both;
+}
+footer{
+    margin-top: 16px;
+    background-color:#016801;
+}
+footer p{
+    padding: 16px;
+    color: rgb(247, 247, 247);
+    text-align: center;
+    margin: 0;
+}
+footer a{
+    color: black;
+    text-decoration: none;
+}
+footer a:hover{
+    color: rgb(247, 247, 247);
+}
+.novosti-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.novosti-container > div{
+    display: flex;
+    width: calc(50% - 6px - 6px);
+    margin-bottom: 12px;
+}
+.novosti-container > div:nth-child(2n + 1){
+    margin-right: 6px;
+}
+.novosti-container > div:nth-child(2n){
+    margin-left: 6px;
+}
+.novosti-container > div > a{
+    max-width: 200px;
+    margin-right: 6px;
+}
+.novosti-container > div > .objava{
+    max-width: calc(100% - 200px);
+}
+.novosti-container h2{
+    margin-top: 0;
+}
+.novosti-container time{
+    text-align: right;
+}
+.novosti-container img{
+    width: 100%;
+}
+.novosti-container .objava > a,
+.button{
+    margin-top: 6px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #016801;
+    padding: 10px;
+    border-radius: 6px;
+    color: rgb(247, 247, 247); 
+}
+.novosti-container .objava > a:hover,
+.button:hover{
+    background-color: #63b32e;
+}
+main time{
+    display: block;
+    padding: 6px 0;
+}
+main span{
+    padding: 12px 0;
+    display: block;
+}
+.ostale-novosti figure{
+    float: left;
+    max-width: 150px;
+    margin-right: 12px;
+}
+.ostale-novosti a{
+    color: black;
+}
+h3{
+    font-size: 26px;
+}
+@media screen and (max-width: 1200px) {
+    .novosti-container > div{
+        width: 100%;
+    }
+    .novosti-container > div:nth-child(2n + 1){
+        margin-right: 0;
+    }
+    .novosti-container > div:nth-child(2n){
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 800px) {
+	main figure, main p.f-l{
+		width: 100%;
+        float: none;
+	}
+}
+@media screen and (max-width: 500px) {
+    .novosti-container > div{
+        display: block;
+    }
+    .novosti-container > div > a{
+        max-width: 100%;
+        display: block;
+    }
+    .novosti-container > div > a > img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .novosti-container > div > .objava{
+        max-width: 100%;
+    }
+    .novosti-container img{
+        width: 80%;
+    }
+}
